@@ -577,6 +577,7 @@ div.v-menubar-toolbar-popup {
 	font:bold 11px Arial, Helvetica, sans-serif;
 	color:#666;
 	padding:10px 0;
+	display:none;
 }
 
 .footer .v-label {
