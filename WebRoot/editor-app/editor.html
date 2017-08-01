@@ -113,7 +113,7 @@
 		                </div>
                     	<div class="selected-item-body">
 	                        <div>
-	                             <div class="property-row" ng-repeat="property in selectedItem.properties"
+	                            <div class="property-row" ng-repeat="property in selectedItem.properties"
 	                                ng-click="propertyClicked($index)" ng-class="{'clear' : $index%2 == 0}">
 	                                <span class="title" ng-if="!property.hidden">{{ property.title }}&nbsp;:</span>
 	                                <span class="title-removed" ng-if="property.hidden"><i>{{ property.title }}&nbsp;({{'PROPERTY.REMOVED' | translate}})&nbsp;:</i></span>

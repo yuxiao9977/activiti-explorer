@@ -259,7 +259,7 @@ angular.module('activitiModeler')
                     }
 
                     var selectedItem = {'title': '', 'properties': []};
-
+                    
                     if (canvasSelected) {
                         selectedItem.auditData = {
                             'author': $scope.modelData.createdByUser,

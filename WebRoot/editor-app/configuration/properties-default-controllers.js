@@ -100,7 +100,7 @@ var KisBpmTextPropertyCtrl = [ '$scope', '$modal', function($scope, $modal) {
     // Open the dialog
     $modal(opts);
 }];
-
+var scope_properties = null;
 var KisBpmTextPropertyPopupCtrl = ['$scope', function($scope) {
     
     $scope.save = function() {
@@ -111,5 +111,10 @@ var KisBpmTextPropertyPopupCtrl = ['$scope', function($scope) {
     $scope.close = function() {
         $scope.property.mode = 'read';
         $scope.$hide();
+    };
+    
+    $scope.openproperties = function() {
+    	scope_properties = $scope;
+        window.open("editor-app/properties_self.jsp", "_blank", "width=400,height=400");
     };
 }];
